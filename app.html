@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joseph Otieno — Information Science Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FontAwesome for navigation icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="./app.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Mobile Header -->
+  <header class="head">
+    <div class="heading_container">
+      <a class="head_heading">Joseph Otieno — Information Science Portfolio</a>
+    </div>
+    <nav class="head_icon_holder" id="icon">
+      <i class="fa fa-bars icon"></i>
+      <div class="menu_holder" id="menu">
+        <i class="fa fa-close" id="close"></i>
+        <ul class="menu_links">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+<!-- Desktop Header -->
+<header class="head_desktop" style="background-color: #36b37e; position: absolute; width: 100%;">
+  <nav class="head_desktop_nav">
+    <div class="nav_links">
+      <a href="#Home">Home</a>
+      <a href="#Portfolio">Portfolio</a>
+      <a href="#About">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav_date" id="nav_date"></div>
+  </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <div class="main">
+    <article class="main_article">
+      <h1 class="main_article_heading">
+        Hi — I’m Joseph Otieno
+        <u><br>Information Scientist & Systems Librarian</u>
+      </h1>
+      <p class="main_article_paragraph"> 
+        I deploy and maintain open-source library systems (Koha, DSpace, OJS) and Linux-based infrastructure to support research and teaching. My focus is system configuration, metadata (MARC21), and database administration.
+      </p>
+    </article>
+
+    <ul class="links">
+      <li><i class="fa fa-twitter"></i></li>
+      <li><i class="fa fa-linkedin"></i></li>
+      <li><i class="fa fa-medium"></i></li>
+      <li><i class="fa fa-github"></i></li>
+      <li><i class="fa fa-angellist"></i></li>
+    </ul>
+
+    <nav class="arrow_down">
+      <i class="fa fa-angle-down"></i>
+    </nav>
+  </div>
+
+  <!-- Portfolio Section -->
+  <main class="work" id="Portfolio">
+    <hgroup class="work_header">
+      <h2>Selected Library Systems</h2>
+    </hgroup>
+    <section class="work_body">
+      <div id="project1amend1" class="details_amend"></div>
+      <div id="project1amend1desc" class="details_amenddesc">
+        <div id="project1amend1desc2"></div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="project_one projects">
+        <figure class="projectone_figure figures"></figure>
+        <article class="projectone_details details">
+          <h2>#Koha -<br>Library Management System</h2>
+          <ul>
+            <li>Ubuntu server administration</li>
+            <li>MARC21 cataloging</li>
+            <li>MySQL database management</li>
+            <li>OPAC configuration</li>
+          </ul>
+        </article>
+        <button type="button" class="see_project_button_1 main_buttons" onclick="getId(this.id)" id="1">
+          See Project
+        </button>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project_two projects">
+        <figure class="projecttwo_figure figures"></figure>
+        <article class="projecttwo_details details">
+          <h2>#DSpace<br>Institutional Repository</h2>
+          <ul>
+            <li>PostgreSQL configuration</li>
+            <li>Angular UI customization</li>
+            <li>Digital collections</li>
+            <li>Custom theming</li>
+          </ul>
+        </article>
+        <button type="button" class="see_project_button_2 main_buttons" onclick="getId(this.id)" id="2">
+          See Project
+        </button>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project_three projects">
+        <figure class="projectthree_figure figures"></figure>
+        <article class="projectthree_details details">
+          <h2>#OJS <br>Open Journal Systems (OJS)</h2>
+          <ul>
+            <li>Journal workflow setup</li>
+            <li>Themes & plugins</li>
+            <li>Submission workflows</li>
+            <li>Apache/nginx deployment</li>
+          </ul>
+        </article>
+        <button type="button" class="see_project_button_3 main_buttons" onclick="getId(this.id)" id="3">
+          See Project
+        </button>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project_four projects">
+        <figure class="projectfour_figure figures"></figure>
+        <article class="projectfour_details details">
+          <h2>#Moodle — eLearning System<br> <span class="upcoming">(Upcoming)</span></h2>
+          <ul>
+            <li>Course management</li>
+            <li>Resource modules</li>
+            <li>Customization</li>
+            <li>Linux-based deployment</li>
+          </ul>
+        </article>
+        <button type="button" class="see_project_button_4 main_buttons" onclick="getId(this.id)" id="4">
+          See Project
+        </button>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project_five projects">
+        <figure class="projectfive_figure figures"></figure>
+        <article class="projectfive_details details">
+          <h2>#Custom Web App<br>Social Platform</h2>
+          <ul>
+            <li>PHP</li>
+            <li>MariaDB</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </article>
+        <button type="button" class="see_project_button_5 main_buttons" onclick="getId(this.id)" id="5">
+          See Project
+        </button>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project_six projects">
+        <figure class="projectsix_figure figures"></figure>
+        <article class="projectsix_details details">
+          <h2>#Network Infrastructure<br>Design & Security</h2>
+          <ul>
+            <li>Network Design</li>
+            <li>Cisco Packet Tracer</li>
+            <li>AWS</li>
+            <li>Report Writing</li>
+          </ul>
+        </article>
+        <button type="button" class="see_project_button_6 main_buttons" onclick="getId(this.id)" id="6">
+          See Project
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- About Section -->
+  <div class="aboutme" id="About">
+    <article class="aboutme_header">
+      <h2>About me</h2>
+      <p style="margin-bottom: 10px;">
+        I develop and support digital library services. My academic background in Information Science and professional experience in library systems enable me to deploy, maintain, and document technologies that support research, learning, and resource access.
+        <br>
+        My portfolio demonstrates technical competencies in open-source library software and user support.
+      </p>
+      <button type="button">Get My Resume</button>
+    </article>
+
+    <div class="aboutme_categories" style="margin-bottom: 20px; margin-top: 30px;">
+      <div class="languages categories">
+        <figure>
+          <img src="./assets/about/language1.png" alt="languages icon">
+        </figure>
+        <h2>Technical Focus Areas</h2>
+        <ul>
+          <li>Library system administration</li>
+          <li>Linux server</li>
+          <li>Database management</li>
+          <li>Web technologies</li>
+        </ul>
+      </div>
+
+      <div class="framework categories">
+        <figure>
+          <img src="./assets/about/framework1.png" alt="framework icon">
+        </figure>
+        <h2>Systems and platforms</h2>
+        <ul>
+          <li>Linux server / OS</li>
+          <li>Koha ILS</li>
+          <li>DSpace</li>
+          <li>OJS</li>
+          <li>Moodle</li>
+        </ul>
+      </div>
+
+      <div class="skill categories">
+        <figure>
+          <img src="./assets/about/skills.png" alt="skills icon">
+        </figure>
+        <h2>Tools and utilities</h2>
+        <ul>
+          <li>Git and version control</li>
+          <li>Apache</li>
+          <li>Virtual machines (VMs)</li>
+          <li>GitLab</li>
+          <li>Database backups</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact" id="contact">
+    <article class="reach_out">
+      <p>
+        I'm always interested in learning and hearing about new projects, so if you'd like to chat please get in touch.
+      </p>
+    </article>
+
+    <form action="https://formspree.io/f/xldqlwel" method="post" class="contact_form" id="form">
+  <fieldset class="form_fieldset">
+     <!-- Message container at the top -->
+    <div id="form_message_status" style="
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      display: none;">
+    </div>
+
+    <input type="text" name="user_name" id="form_name" placeholder="Full name" maxlength="30" required>
+    <input type="email" name="email" id="form_email" placeholder="Email address" maxlength="30" required>
+    <input type="text" name="subject" id="form_subject" placeholder="Subject" maxlength="50" required>
+    <textarea name="message" id="form_message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+    <button type="submit" id="form_button">Get in touch</button>
+    <span id="error" class="error" aria-live="polite"></span>
+  </fieldset>
+     </form>
+
+
+    <ul class="form_links">
+      <li><i class="fa fa-twitter"></i></li>
+      <li><i class="fa fa-linkedin"></i></li>
+      <li><i class="fa fa-medium"></i></li>
+      <li><i class="fa fa-github"></i></li>
+      <li><i class="fa fa-angellist"></i></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+ <footer>
+  <div class="line"></div>
+  <ul class="form_links_desktop">
+    <li>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" rel="noopener">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:youremail@example.com">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+  <p style="text-align: center; margin-top: 10px; color: #505f79; font-size: 14px;">
+    &copy; <span id="currentYear"></span> Joseph Otieno. All rights reserved.
+  </p>
+  <script>
+    // Dynamically insert current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
